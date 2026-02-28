@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diagnostico-de-redes"
+version = "2.0.0"
+description = "Ferramenta interativa e robusta para diagnóstico de conectividade de rede"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Gabriel Noronha", email = "seu-email@exemplo.com"}
+]
+keywords = ["rede", "diagnóstico", "ping", "dns", "internet", "conectividade"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Networking",
+]
+
+dependencies = [
+    "ping3==5.1.5",
+    "dnspython==2.8.0",
+    "psutil==7.2.2",
+    "rich==14.3.3",
+    "Pygments==2.19.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pylint>=2.0",
+    "black>=22.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/seu-usuario/diagnostico-de-redes"
+Documentation = "https://github.com/seu-usuario/diagnostico-de-redes#readme"
+Repository = "https://github.com/seu-usuario/diagnostico-de-redes.git"
+Issues = "https://github.com/seu-usuario/diagnostico-de-redes/issues"
+
+[tool.setuptools]
+py-modules = ["main", "rede", "sistema", "logger"]
+
+[tool.black]
+line-length = 100
+target-version = ['py36']
+
+[tool.pylint.main]
+fail-under = 7.0
+max-line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

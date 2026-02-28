@@ -1,0 +1,33 @@
+# Auto-detect text files and normalize line endings to LF
+* text=auto
+
+# Python
+*.py text eol=lf
+*.pyi text eol=lf
+*.pyc binary
+*.pyo binary
+*.egg-info/ text eol=lf
+
+# Markdown
+*.md text eol=lf
+*.markdown text eol=lf
+
+# JSON/YAML
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Text
+*.txt text eol=lf
+
+# Shell
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Batch
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Documentation
+*.rst text eol=lf
