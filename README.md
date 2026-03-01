@@ -1,9 +1,9 @@
 # 🌐 Diagnóstico de Rede
 
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status: Ativo](https://img.shields.io/badge/status-ativo-brightgreen.svg)](#)
-[![Tests](https://github.com/seu-usuario/diagnostico-de-redes/workflows/Python%20Tests/badge.svg)](https://github.com/seu-usuario/diagnostico-de-redes/actions)
+[![Tests](https://github.com/sbagzz/diagnostico_de_redes/workflows/Python%20Tests/badge.svg)](https://github.com/sbagzz/diagnostico_de_redes/actions)
 
 Ferramenta interativa e robusta para diagnóstico completo de conectividade de rede, desenvolvida em Python com interface colorida via terminal.
 
@@ -43,19 +43,19 @@ Ferramenta interativa e robusta para diagnóstico completo de conectividade de r
 
 **HTTPS:**
 ```bash
-git clone https://github.com/seu-usuario/diagnostico-de-redes.git
+git clone https://github.com/sbagzz/diagnostico_de_redes.git
 cd diagnostico-de-redes
 ```
 
 **SSH:**
 ```bash
-git clone git@github.com:seu-usuario/diagnostico-de-redes.git
-cd diagnostico-de-redes
+git clone git@github.com:sbagzz/diagnostico_de_redes.git
+cd diagnostico_de_redes
 ```
 
 ### 2️⃣ Pré-requisitos
 ```bash
-# Verifique se Python 3.6+ está instalado
+# Verifique se Python 3.10+ está instalado
 python --version
 ```
 
@@ -93,12 +93,12 @@ python main.py
 | Pacote | Versão | Descrição |
 |--------|--------|-----------|
 | `ping3` | 5.1.5 | Teste de ping (ICMP) |
-| `dnspython` | 2.8.0 | Resolução de DNS |
+| `dnspython` | 2.6.1 | Resolução de DNS |
 | `psutil` | 7.2.2 | Informações do sistema |
 | `rich` | 14.3.3 | Formatação de saída |
 | `Pygments` | 2.19.2 | Realce de sintaxe |
 
-**Compatibilidade:** Python 3.9+  
+**Compatibilidade:** Python 3.10+  
 **Acesso de Rede:** Requerido para testes de conectividade
 
 ---
@@ -277,9 +277,8 @@ Para contribuir, leia [CONTRIBUTING.md](CONTRIBUTING.md) e abra uma issue descre
 ## 👨‍💻 Autor
 
 **Gabriel Noronha**  
-- 📧 Email: seu-email@exemplo.com
-- 🔗 GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- 💼 LinkedIn: [Gabriel Noronha](https://linkedin.com/in/seu-perfil)
+- 📧 Email: gnoronha409@gmail.com
+- 🔗 GitHub: [@sbagzz](https://github.com/sbagzz)
 
 Estudante de desenvolvimento Python e segurança.
 
@@ -287,6 +286,4 @@ Estudante de desenvolvimento Python e segurança.
 
 **Versão:** 2.0  
 **Última atualização:** 28 de fevereiro de 2026  
-**Desenvolvido em:** Python 3.9+
-
-Feito com ❤️ para a comunidade Python
+**Desenvolvido em:** Python 3.10+

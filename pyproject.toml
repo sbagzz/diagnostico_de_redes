@@ -7,10 +7,10 @@ name = "diagnostico-de-redes"
 version = "2.0.0"
 description = "Ferramenta interativa e robusta para diagnóstico de conectividade de rede"
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "Gabriel Noronha", email = "seu-email@exemplo.com"}
+    {name = "Gabriel Noronha", email = "gnoronha409@gmail.com"}
 ]
 keywords = ["rede", "diagnóstico", "ping", "dns", "internet", "conectividade"]
 classifiers = [
@@ -33,10 +33,10 @@ classifiers = [
 
 dependencies = [
     "ping3==5.1.5",
-    "dnspython==2.8.0",
+    "dnspython==2.6.1",
     "psutil==7.2.2",
     "rich==14.3.3",
-    "Pygments==2.19.2",
+  
 ]
 
 [project.optional-dependencies]
@@ -47,10 +47,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/seu-usuario/diagnostico-de-redes"
-Documentation = "https://github.com/seu-usuario/diagnostico-de-redes#readme"
-Repository = "https://github.com/seu-usuario/diagnostico-de-redes.git"
-Issues = "https://github.com/seu-usuario/diagnostico-de-redes/issues"
+Homepage = "https://github.com/sbagzz/diagnostico_de_redes"
+Documentation = "https://github.com/sbagzz/diagnostico_de_redes#readme"
+Repository = "https://github.com/sbagzz/diagnostico_de_redes.git"
+Issues = "https://github.com/sbagzz/diagnostico_de_redes/issues"
 
 [tool.setuptools]
 py-modules = ["main", "rede", "sistema", "logger"]
