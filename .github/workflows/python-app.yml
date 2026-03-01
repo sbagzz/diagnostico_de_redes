@@ -34,11 +34,11 @@ jobs:
     
     - name: Verify import structure
       run: |
-        python -c "from rede import teste_conexao, teste_dns; print('✓ rede.py OK')"
-        python -c "from sistema import usuario_conectado, mostrar_ip; print('✓ sistema.py OK')"
-        python -c "from logger import salvar_log; print('✓ logger.py OK')"
+        python -c "from rede import teste_conexao, teste_dns; print('rede.py OK')"
+        python -c "from sistema import usuario_conectado, mostrar_ip; print('sistema.py OK')"
+        python -c "from logger import salvar_log; print('logger.py OK')"
     
     - name: Check Python syntax
       run: |
         python -m py_compile main.py rede.py sistema.py logger.py
-        echo "✓ All files have valid syntax"
+        echo " All files have valid syntax"
