@@ -78,7 +78,7 @@ source venv/bin/activate
 
 ### 4️⃣ Instalar Dependências
 ```bash
-pip install -r requirements.txt
+ pip install -e .
 ```
 
 ### 5️⃣ Executar
@@ -112,7 +112,7 @@ diagnóstico de redes/
 ├── rede.py              # Funções de teste de rede
 ├── sistema.py           # Coleta de informações do sistema
 ├── logger.py            # Sistema de logging
-├── requirements.txt     # Dependências Python
+├── pyproject.toml       # Dependências Python
 ├── diagnostico.log      # Arquivo de log (gerado automaticamente)
 └── README.md            # Esta documentação
 ```
@@ -214,7 +214,7 @@ diagnóstico de redes/
 ### ❌ Erro: `ModuleNotFoundError: No module named 'ping3'`
 ```bash
 # Reinstale as dependências
-pip install --upgrade -r requirements.txt
+pip install --upgrade -e .
 ```
 
 ### ❌ Erro: "Permission denied" ao testar ping
