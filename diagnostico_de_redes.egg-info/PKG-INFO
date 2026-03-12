@@ -1,3 +1,42 @@
+Metadata-Version: 2.4
+Name: diagnostico-de-redes
+Version: 2.0.0
+Summary: Ferramenta interativa e robusta para diagnóstico de conectividade de rede
+Author-email: Gabriel Noronha <gnoronha409@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/sbagzz/diagnostico_de_redes
+Project-URL: Documentation, https://github.com/sbagzz/diagnostico_de_redes#readme
+Project-URL: Repository, https://github.com/sbagzz/diagnostico_de_redes.git
+Project-URL: Issues, https://github.com/sbagzz/diagnostico_de_redes/issues
+Keywords: rede,diagnóstico,ping,dns,internet,conectividade
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ping3==5.1.5
+Requires-Dist: dnspython==2.6.1
+Requires-Dist: psutil==7.2.2
+Requires-Dist: rich==14.3.3
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pylint>=2.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Dynamic: license-file
+
 # 🌐 Diagnóstico de Rede
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -29,8 +68,7 @@ Ferramenta interativa e robusta para diagnóstico completo de conectividade de r
 ✅ **Teste de Conexão** - Verifica conectividade com 8.8.8.8 (Google DNS) e mede latência  
 ✅ **IP Local** - Exibe o endereço IP da máquina  
 ✅ **Teste de DNS** - Valida resolução de nomes (domínio google.com)  
-✅ **Usuário do Sistema** - Mostra o nome do usuário conectado
-✅ **OS** - Mostra informações do sistema operacional    
+✅ **Usuário do Sistema** - Mostra o nome do usuário conectado  
 ✅ **Diagnóstico Completo** - Executa todos os testes simultaneamente  
 ✅ **Interface Colorida** - Menu formatado com Rich para melhor visualização  
 ✅ **Log Automático** - Registra todas as operações em `diagnostico.log`  
@@ -151,13 +189,10 @@ diagnóstico de redes/
 **Responsabilidades:**
 - 👤 Informações do usuário
 - 🖥️ Endereço IP da máquina
-- 🖥️ Sistema operacional da máquina
 
 **Funções:**
 - `usuario_conectado()` → `str` - Nome do usuário
 - `mostrar_ip()` → `str` - IP local
-- `OS()` → `str` - OS da máquina
-
 
 ### `logger.py`
 **Responsabilidades:**
@@ -180,15 +215,14 @@ diagnóstico de redes/
 2 - Identificar IP local
 3 - Testar DNS
 4 - Usuário conectado
-5 - OS 
-6 - Diagnóstico Completo
+5 - Diagnóstico completo
 0 - Sair
 ===================================
 
 ► Escolha uma opção:
 ```
 
-### Diagnóstico Completo (Opção 6)
+### Diagnóstico Completo (Opção 5)
 ```
 ╭─────────────────────────────────────────────────╮
 │ Diagnóstico de Rede                              │
@@ -198,7 +232,7 @@ diagnóstico de redes/
 │ Internet     │ ✓ OK           │ 15.23 ms         │
 │ IP Local     │ INFO           │ 192.168.1.100    │
 │ DNS          │ ✓ OK           │ Resolução OK     │
-│ Sistema      │ INFO           │ Linux            │
+│ Usuário      │ INFO           │ usuario          │
 ╰──────────────┴────────────────┴──────────────────╯
 ```
 
@@ -207,7 +241,6 @@ diagnóstico de redes/
 2026-02-28 20:01:56,231 - Aplicação iniciada
 2026-02-28 20:01:56,588 - Diagnóstico completo iniciado
 2026-02-28 20:01:57,123 - Teste de conexão: OK (15.23 ms)
-2026-02-28 20:01:57,456 - Teste de DNS: OK
 2026-02-28 20:01:57,456 - Teste de DNS: OK
 2026-02-28 20:01:57,698 - Diagnóstico completo finalizado
 2026-02-28 20:01:57,739 - Aplicação encerrada normalmente
@@ -290,6 +323,6 @@ Estudante de desenvolvimento Python e segurança.
 
 ---
 
-**Versão:** 2.1 
-**Última atualização:** 12 de março de 2026  
+**Versão:** 2.0  
+**Última atualização:** 28 de fevereiro de 2026  
 **Desenvolvido em:** Python 3.10+

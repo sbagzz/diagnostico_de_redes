@@ -1,7 +1,7 @@
 import sys
 
 from rede import teste_conexao, teste_dns
-from sistema import usuario_conectado, mostrar_ip
+from sistema import usuario_conectado, mostrar_ip, OS
 from logger import salvar_log
 from rich.table import Table
 from rich.console import Console
@@ -39,7 +39,8 @@ def menu() -> None:
     console.print("2 - Identificar IP local")
     console.print("3 - Testar DNS")
     console.print("4 - Usuário conectado")
-    console.print("5 - Diagnóstico completo")
+    console.print("5 - OS")
+    console.print("6 - Diagnóstico completo")
     console.print("0 - Sair")
 
 
@@ -53,6 +54,7 @@ def diagnostico_completo() -> None:
     ip = mostrar_ip()
     dns = teste_dns()
     usuario = usuario_conectado()
+    sistema_operacional = OS()
 
     table = Table(title="Resultado do Diagnóstico")
 
@@ -64,6 +66,7 @@ def diagnostico_completo() -> None:
     table.add_row("IP Local", "[blue]INFO[/blue]", str(ip))
     table.add_row("DNS", status_color(dns), "Resolução de nomes")
     table.add_row("Usuário", "[blue]INFO[/blue]", str(usuario))
+    table.add_row("OS", "[blue]INFO[/blue]", str(sistema_operacional))
 
     console.print(table)
 
@@ -131,7 +134,21 @@ def main() -> None:
 
                 pausar()
 
+
             elif opcao == "5":
+                limpar_tela()
+                cabecalho()
+
+                salvar_log("Detecção de OS iniciada")
+                sistema_operacional = OS()
+
+                console.print("\n[bold]OS detectado[/bold]")
+                console.print(f"OS: [blue]{sistema_operacional}[/blue]") 
+
+                pausar()  
+
+
+            elif opcao == "6":
                 diagnostico_completo()
 
             elif opcao == "0":

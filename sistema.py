@@ -1,6 +1,6 @@
 import psutil as ps
 import socket
-
+import platform
 
 def usuario_conectado():
     """Retorna o nome do usuário conectado.
@@ -25,5 +25,17 @@ def mostrar_ip():
         return ip
     except Exception:
         return "Desconhecido"
+    
+def OS():
+    try:
+        so = platform.platform()
+        print(f"Sistema operacional detectado: {so}")
+        return so
+    
+    except Exception:
+        return "Falha ao detectar o sistema operacional"
+
+
+
 
 
