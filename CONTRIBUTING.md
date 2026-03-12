@@ -11,7 +11,7 @@ Clique no botão **"Fork"** no topo da página.
 
 ### 2. Clone seu Fork
 ```bash
-git clone https://github.com/seu-usuario/diagnóstico-de-redes.git
+git clone https://github.com/sbagzz/diagnostico_de_redes.git
 cd diagnóstico-de-redes
 ```
 
