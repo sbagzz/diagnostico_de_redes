@@ -23,18 +23,25 @@ Ferramenta interativa e robusta para diagnóstico completo de conectividade de r
 
 
 ---
+# ✨ Funcionalidades
 
-## ✨ Funcionalidades
+✅ **Teste de Conexão** - Verifica conectividade com 8.8.8.8 (Google DNS) e mede latência
 
-✅ **Teste de Conexão** - Verifica conectividade com 8.8.8.8 (Google DNS) e mede latência  
 ✅ **IP Local** - Exibe o endereço IP da máquina  
+
 ✅ **Teste de DNS** - Valida resolução de nomes (domínio google.com)  
+
 ✅ **Usuário do Sistema** - Mostra o nome do usuário conectado
-✅ **OS** - Mostra informações do sistema operacional    
+
+✅ **OS**-  Mostra informações do sistema operacional    
+
 ✅ **Diagnóstico Completo** - Executa todos os testes simultaneamente  
+
 ✅ **Interface Colorida** - Menu formatado com Rich para melhor visualização  
+
 ✅ **Log Automático** - Registra todas as operações em `diagnostico.log`  
-✅ **Cross-platform** - Funciona em Windows, Linux e macOS  
+
+✅ **Cross-platform** - Funciona em Windows, Linux e macOS
 
 ---
 
@@ -206,9 +213,9 @@ diagnóstico de redes/
 ```
 2026-02-28 20:01:56,231 - Aplicação iniciada
 2026-02-28 20:01:56,588 - Diagnóstico completo iniciado
-2026-02-28 20:01:57,123 - Teste de conexão: OK (15.23 ms)
-2026-02-28 20:01:57,456 - Teste de DNS: OK
-2026-02-28 20:01:57,456 - Teste de DNS: OK
+2026-02-28 20:01:57,123 - Teste de conexão iniciado
+2026-02-28 20:01:57,456 - Teste de DNS iniciado
+2026-02-28 20:01:57,456 - Detecção de SO iniciada
 2026-02-28 20:01:57,698 - Diagnóstico completo finalizado
 2026-02-28 20:01:57,739 - Aplicação encerrada normalmente
 ```
